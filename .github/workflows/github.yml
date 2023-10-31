@@ -27,6 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: nodejs init
-        run: npm init -y
+      - run: npm ci
+      - run: npm run build --if-present
 
       
